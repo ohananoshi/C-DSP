@@ -4,13 +4,18 @@
 
 ## Headers
 
+- stdio.h
 - stdlib.h
 - stdbool.h
+- stdint.h
+- limits.h
 - math.h
 
 ## Array functions (signal functions)
 
 - signal_generate
+- signal_round
+- signal_decompose
 - signal_mean
 - signal_variance
 - signal_standard_deviation
@@ -28,6 +33,13 @@
 - point_ret_to_polar
 
 ## Array functions description
+
+- #### point_ret_to_polar
+
+```C
+double point_ret_to_polar(double point_x, double point_y, bool component);
+```
+If _component_ = 1 return radius, else return _phase_.
 
 - #### signal_mean
 
